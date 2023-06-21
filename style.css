@@ -94,8 +94,8 @@ label {
   flex-direction: column;
   color: white;
   margin-top: 2rem;
-  height: 3.5rem;
-  width: 100;
+  line-height: 3.5rem;
+  width: 100%;
 }
 
 /* spécification */

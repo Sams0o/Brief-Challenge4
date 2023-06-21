@@ -13,6 +13,9 @@ connexionBtn.addEventListener("click", (event) =>{
     // error1.classList.add("evenement1");
     email.style.border="2px solid rgba(240, 34, 6, 0.5)"
     error1.style.visibility="visible"
+  } else {
+    email.style.border="none"
+    error1.style.visibility="hidden"
   }
 });
 
@@ -21,6 +24,9 @@ connexionBtn.addEventListener("click", function() {
    if (password.value === "") {
     password.style.border="2px solid rgba(240, 34, 6, 0.5)"
     error2.style.visibility="visible"
+  } else {
+    password.style.border="none"
+    error2.style.visibility="hidden"
   }
 });
 
