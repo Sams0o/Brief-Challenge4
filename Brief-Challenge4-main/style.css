@@ -1,0 +1,100 @@
+:root {
+  --background-card: #fff;
+  --background-learn: #f8f8f8;
+  --background-internal: #f3f4f5;
+  --box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  --color-text: #172533;
+  --color-text-soft: #626e76;
+  --color-accent: #7c47c0;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+/* typo */
+.learn {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+label{
+text-transform: uppercase;
+font-size: small;
+font-weight: 700;
+}
+
+.btn{
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
+
+}
+
+/* élément réutilisable */
+.learn {
+  background-color: var(--background-learn);
+  display: flex;
+  justify-content:center ;
+  align-content: center;             
+}
+
+.card {
+  background-color: var(--background-card);
+  display: flex;
+  flex-direction: column;
+  padding:0 2.5rem;
+  
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  }
+
+  input{
+    border: none;
+    
+  }
+
+  .alert{
+    /* visibility: hidden; */
+  }
+
+.btn{
+  background-color: var(--color-accent);
+  border: none;
+}
+/* spécification */
+
+p{  
+  color: rgb(201, 11, 11);
+  visibility: hidden;
+  font-size: small;
+}
+
+.evenement{
+  visibility: visible;
+}
+
+.alertBorder1{
+ border: 2px solid red; 
+}
+
+.evenement2{
+  visibility: visible;  
+}
+
+.alertBorder2{
+  border: 2px solid red;
+}
+
+
+
