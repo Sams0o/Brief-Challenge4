@@ -14,36 +14,43 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background-learn);
+}
 /* typo */
 .learn {
   font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 900;
+  margin-top: 2.5rem;
 }
 
 label {
   text-transform: uppercase;
-  font-size: small;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
+::-moz-placeholder {
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
 .btn {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 
 /* élément réutilisable */
 .learn {
-  background-color: var(--background-learn);
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 690px;
-  margin: 0;
+  height: 100%;
 }
 
 h1 {
@@ -57,11 +64,9 @@ h1 {
   flex-direction: column;
   margin: 2rem 33rem;
   padding: 0 3rem;
+  max-width: 410px;
 }
 
-#formulaire {
-  margin-top: -2rem;
-}
 .contact {
   display: flex;
   flex-direction: column;
@@ -72,28 +77,57 @@ h1 {
   border: none;
   border-radius: 0.5rem;
   height: 3.5rem;
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
 }
 
-::placeholder {
-  font-family: "poppins", sans-serif;
+#password {
+  margin-bottom: -0.8rem;
 }
 
-label {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+/* test 1 */
+/**[for="souvenir"] {
+  margin: auto; 
 }
-.check {
-  display: flex;
-  align-items: center;
+
+#souvenir {
+  margin: auto 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}*/
+
+/* test 2 */
+.check label{
+  padding-left: 0.2rem;
 }
+
+.check input {
+  border: solid 0.1rem rgba(98, 110, 114, 0.3); 
+  border-radius: 0.2rem;
+  position: relative;
+  top: 0.4rem;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.check input:checked {
+  background-color: var(--color-accent);
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+
 .btn {
   background-color: var(--color-accent);
   border: none;
   border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
   color: white;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   line-height: 3.5rem;
   width: 100%;
 }
