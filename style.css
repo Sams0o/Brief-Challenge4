@@ -81,6 +81,9 @@ h1 {
   padding-left: 1.5rem;
 }
 
+#alert1 {
+  margin-top: -0.1rem;
+}
 #password {
   margin-bottom: -0.8rem;
 }
@@ -118,8 +121,6 @@ input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
 }
-
-
 
 .btn {
   background-color: var(--color-accent);
